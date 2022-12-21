@@ -1,0 +1,111 @@
+$blue: #0182f9;
+header {
+    width: 100%;
+    background-color: white;
+
+    .header-banner {
+        background-color: #0182f9;
+        padding: 0.5em 0;
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+            gap: 3em;
+            font-size: 0.7rem;
+        }
+    }
+
+    .container > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 0;
+
+        .logo {
+            img {
+                height: 11vmin;
+            }
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1em;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-size: 1rem;
+                gap: 1em;
+
+                li {
+                    font-weight: bold;
+                    position: relative;
+                    line-height: 100px;
+
+                    &.active {
+                        color: $blue;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0%;
+                            left: 0;
+                            height: 5px;
+                            width: 100%;
+                            background-color: $blue;
+                        }
+                    }
+                    &:hover {
+                        color: $blue;
+                        transition: all 300ms ease;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0%;
+                            left: 0;
+                            height: 5px;
+                            width: 100%;
+                            background-color: $blue;
+                            animation: height 300ms ease;
+                        }
+                        @keyframes height {
+                            0% {
+                                height: 0px;
+                            }
+                            50% {
+                                height: 3px;
+                            }
+                            100% {
+                                height: 5px;
+                            }
+                        }
+                    }
+                }
+                i {
+                    color: #0182f9;
+                }
+            }
+
+            .search {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-bottom: 3px solid #0182f9;
+
+                input {
+                    text-align: right;
+                    border: none;
+                    width: 8em;
+                }
+                i {
+                    color: grey;
+                }
+            }
+        }
+    }
+}
