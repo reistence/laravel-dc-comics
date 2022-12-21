@@ -21,9 +21,6 @@
                         <a href="{{route('comics.create')}}">ADD COMIC</a>
                     </li>
                     </li>
-                    <li>
-                        <a href="">SHOP <i class="fa-solid fa-caret-down"></i></a>
-                    </li>
                 </ul>
                 <div class="search">
                     <input type="search" name="" id="" placeholder="Search">

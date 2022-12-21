@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Crea una nuova pasta')
+@section('title', 'Add a new Comic')
 
 @section('content')
 
