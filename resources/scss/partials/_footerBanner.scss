@@ -1,0 +1,50 @@
+@use "../partials/mixins" as *;
+$blue: #0182f9;
+
+.footer-banner {
+    width: 100%;
+    background-color: blue;
+    height: 150px;
+
+    .footer-banner-container {
+        height: 150px;
+        @include my-container;
+
+        ul {
+            height: 100%;
+            @include my-flex(row, space-around);
+
+            li {
+                @include my-flex(row, space-between);
+
+                gap: 0.4em;
+                flex-wrap: wrap;
+                div {
+                    width: 40px;
+                }
+
+                img {
+                    object-fit: contain;
+                    width: 40px;
+                    height: 40px;
+                }
+                a {
+                    font-size: 0.8rem;
+                    color: white;
+                    min-width: max-content;
+                }
+                @media screen and (max-width: 780px) {
+                    a {
+                        display: none;
+                    }
+                }
+
+                @media screen and (max-width: 480px) {
+                    a {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

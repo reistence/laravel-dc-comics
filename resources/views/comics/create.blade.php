@@ -44,7 +44,7 @@
                             <textarea class="form-control" name="description" id="description" rows="10"></textarea>
                         </div>
 
-                        <button class="btn btn-success" type="submit">Salva</button>
+                        <button class="btn btn-danger" type="submit">Add</button>
                     </form>
                 </div>
             </div>

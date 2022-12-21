@@ -8,38 +8,18 @@
     <div class="container">
         <div>
             <div class="logo">
-                <a href="/comics">
+                <a href="/">
                     <img src="{{Vite::asset('resources/images/dc-logo.png')}}" alt="" srcset="">
                 </a>
             </div>
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="">CHARACTERS</a>
+                        <a href="{{route('comics.index')}}">ALL COMICS</a>
                     </li>
-                    <li>
-                        <a href="">COMICS</a>
+                <li>
+                        <a href="{{route('comics.create')}}">ADD COMIC</a>
                     </li>
-                    <li>
-                        <a href="">MOVIES</a>
-                    </li>
-                    <li>
-                        <a href="">TV</a>
-                    </li>
-                    <li>
-                        <a href="">GAMES</a>
-                    </li>
-                    <li>
-                        <a href="">COLLECTIBLES</a>
-                    </li>
-                    <li>
-                        <a href="">VIDEOS</a>
-                    </li>
-                    <li>
-                        <a href="">FANS</a>
-                    </li>
-                    <li>
-                        <a href="">NEWS</a>
                     </li>
                     <li>
                         <a href="">SHOP <i class="fa-solid fa-caret-down"></i></a>
