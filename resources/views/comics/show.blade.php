@@ -5,7 +5,7 @@
     <div class="container">
         
 
-        <h2>Comic: {{$comic->title}}</h2>
+        <h2>{{$comic->title}}</h2>
         <div class="my-4 d-flex gx-3 justify-content-between align-items-start">
             @if (!empty($comic->thumb))
                 <img class="comic-img" src="{{$comic->thumb}}" alt="">

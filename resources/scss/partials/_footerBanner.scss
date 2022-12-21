@@ -32,6 +32,9 @@ $blue: #0182f9;
                     font-size: 0.8rem;
                     color: white;
                     min-width: max-content;
+                    &:hover {
+                        color: white !important;
+                    }
                 }
                 @media screen and (max-width: 780px) {
                     a {
