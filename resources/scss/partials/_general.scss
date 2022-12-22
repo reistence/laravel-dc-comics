@@ -50,3 +50,23 @@ form {
     border-radius: 20px;
     padding: 1em;
 }
+
+tr {
+    position: relative;
+}
+
+.mymod {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $blue;
+    color: white;
+    width: 20em;
+    height: 15em;
+    border: 1px solid $blue;
+    border-radius: 20px;
+    padding: 1.5em;
+    display: none;
+    z-index: 999;
+}

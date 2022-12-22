@@ -27,14 +27,16 @@
                             <a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary">
                         <i class="fa-regular fa-eye"></i>    
                         </a>
-                              <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-success">
+                              <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-primary">
                                 <i class="fa-regular fa-pen-to-square"></i>
                         </a>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#del-modal-{{$comic->id}}">
+                        {{-- <button
+                        type="button" class="del btn btn-danger" data-bs-toggle="modal" data-bs-target="#del-modal-{{$comic->id}}"
+                        >
                             <i class="fa-regular fa-trash-can"></i>
-                        </button>
+                        </button> --}}
 
-                        <form class="d-inline" action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                        {{-- <form class="d-inline" action="{{route('comics.destroy', $comic->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
                             <div class="modal fade" id="del-modal-{{$comic->id}}" tabindex="-1">
@@ -54,6 +56,22 @@
                                     </div>
                                 </div>
                             </div>
+                        </form> --}}
+                        <button
+                        type="button" class="del btn btn-danger"
+                        >
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>
+
+                        <form class="mymod"  tabindex="-1"
+                        action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <h3>Delete</h3>
+                            <p>{{$comic->title}}</p>
+                            <p>Are you sure you want to delete this comic?</p>
+                            <button class="mybtn btn btn-danger" type="submit">Delete</button>
+                            <button type="button" class="dismissBtn btn btn-light">Dismiss</button>
                         </form>
                     
                     </td>
