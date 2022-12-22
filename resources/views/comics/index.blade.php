@@ -30,14 +30,14 @@
                               <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-success">
                                 <i class="fa-regular fa-pen-to-square"></i>
                         </a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#del-modal-{{$comic->id}}">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>
 
                         <form class="d-inline" action="{{route('comics.destroy', $comic->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#del-modal">
-                                <i class="fa-regular fa-trash-can"></i>
-                            </button>
-                            <div class="modal fade" id="del-modal" tabindex="-1">
+                            <div class="modal fade" id="del-modal-{{$comic->id}}" tabindex="-1">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                     <div class="modal-header">

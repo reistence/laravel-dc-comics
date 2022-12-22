@@ -8,7 +8,7 @@
             <h2 class="text-center">Add a new Comic</h2>
             <div class="row justify-content-center">
                 <div class="col-7 mb-5">
-                    <form action="{{ route('comics.store') }}" method="POST">
+                    <form class="bg-primary text-white" action="{{ route('comics.store') }}" method="POST">
                         @csrf
                         <div class="mb-2">
                             <label for="title">Title</label>
