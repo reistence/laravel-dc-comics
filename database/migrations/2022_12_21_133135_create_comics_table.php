@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text('thumb');
             $table->string('price', 20);
             $table->string('series', 100);
-            $table->dateTime('sale_date')->format('Y-m-d');
+            $table->date('sale_date');
             $table->string('type', 100);
             $table->timestamps();
         });

@@ -22,6 +22,8 @@
                 <dd>{{$comic->series}}</dd>
                 <dt>Type</dt>
                 <dd>{{$comic->type}}</dd>
+                <dt>Sale Date</dt>
+                <dd>{{$comic->sale_date}}</dd>
                 <dt>Description</dt>
                 <dd>{{$comic->description}}</dd>
 
