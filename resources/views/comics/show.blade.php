@@ -6,14 +6,17 @@
         
 
         <h2>{{$comic->title}}</h2>
-        <div class="my-4 d-flex gx-3 justify-content-between align-items-start">
+        <div class="my-4 ">
+            <div class="col-10 d-flex gx-3 justify-content-evenly align-items-start">
+
+            
             @if (!empty($comic->thumb))
-                <img class="comic-img" src="{{$comic->thumb}}" alt="">
+                <img class="comic-img " src="{{$comic->thumb}}" alt="">
             @else
                 <p>No Image found</p>
             @endif
 
-            <dl class="w-75">
+            <dl class="w-75 show-txt">
                 <dt>Title</dt>
                 <dd>{{$comic->title}}</dd>
                 <dt>Price</dt>
@@ -28,6 +31,7 @@
                 <dd>{{$comic->description}}</dd>
 
             </dl>
+        </div>
         </div>
     </div>
 @endsection

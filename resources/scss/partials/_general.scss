@@ -5,6 +5,8 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700&display=swap");
 
+$blue: #0182f9;
+
 html {
     font-size: 100%;
     font-family: "Encode Sans Condensed", sans-serif;
@@ -32,3 +34,14 @@ a {
 // .comic-img {
 //     width: 50%;
 // }
+
+h2 {
+    color: $blue;
+    font-weight: 700;
+    text-align: center;
+}
+
+.show-txt {
+    border-left: 3px solid $blue;
+    padding: 1em;
+}
