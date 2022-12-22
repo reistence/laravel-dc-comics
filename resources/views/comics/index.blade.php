@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title', 'All Comics')
 @section('content')
+
     <div class="container">
         <h1>All Comics</h1>
         <div class="text-end mb-4">
